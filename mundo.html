@@ -124,6 +124,9 @@
         .filter-scroll { display: flex; flex: 1; gap: .5rem; min-width: 0; }
         .filter-scroll-arrow { display: none; flex: 0 0 2.75rem; height: 2.75rem; align-items: center; justify-content: center; border: 3px solid #000; border-radius: .75rem; background: #0038ff; color: #fff; box-shadow: 3px 3px 0 #000; font-size: 1.3rem; font-weight: 900; line-height: 1; touch-action: manipulation; user-select: none; }
         .filter-scroll-arrow:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 #000; }
+        .news-date { display: inline-flex; align-items: center; gap: .3rem; padding: .28rem .5rem; color: #111827; background: #fef08a; border: 2px solid #000; border-radius: .55rem; font-size: .68rem; font-weight: 900; white-space: nowrap; transition: transform .2s ease, background-color .2s ease; }
+        .news-date::before { content: '📅'; }
+        .card-neo:hover .news-date, .card-neo:focus-within .news-date { background: #7dd3fc; transform: rotate(-2deg) translateY(-2px); }
         @media (max-width: 640px) {
             .btn-neo, .filter-chip { min-height: 44px; }
             main { padding-top: 1.25rem; }
@@ -255,7 +258,7 @@
                         <span class="bg-[#0038ff] text-white font-black text-xs px-3 py-1 rounded border-2 border-black uppercase flex items-center gap-1">
                             UGLE • Reino Unido 🇬🇧
                         </span>
-                        <span class="text-xs font-bold text-gray-500">26 Set 2026</span>
+                        <time class="news-date" datetime="2026-09-26">26 Set 2026</time>
                     </div>
 
                     <h3 class="font-comic text-2xl text-gray-900 uppercase mb-2 leading-tight">
@@ -294,7 +297,7 @@
                         <span class="bg-[#7928ca] text-white font-black text-xs px-3 py-1 rounded border-2 border-black uppercase flex items-center gap-1">
                             CMI • América Latina 🌎
                         </span>
-                        <span class="text-xs font-bold text-gray-500">24 Set 2026</span>
+                        <time class="news-date" datetime="2026-09-24">24 Set 2026</time>
                     </div>
 
                     <h3 class="font-comic text-2xl text-gray-900 uppercase mb-2 leading-tight">
@@ -331,7 +334,7 @@
                         <span class="bg-[#ff1744] text-white font-black text-xs px-3 py-1 rounded border-2 border-black uppercase flex items-center gap-1">
                             Escócia 🏴󠁧󠁢󠁳󠁣󠁴󠁿
                         </span>
-                        <span class="text-xs font-bold text-gray-500">19 Set 2026</span>
+                        <time class="news-date" datetime="2026-09-19">19 Set 2026</time>
                     </div>
 
                     <h3 class="font-comic text-2xl text-gray-900 uppercase mb-2 leading-tight">

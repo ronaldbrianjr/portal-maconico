@@ -130,6 +130,9 @@
         .filter-scroll { display: flex; flex: 1; gap: .5rem; min-width: 0; }
         .filter-scroll-arrow { display: none; flex: 0 0 2.75rem; height: 2.75rem; align-items: center; justify-content: center; border: 3px solid #000; border-radius: .75rem; background: #0038ff; color: #fff; box-shadow: 3px 3px 0 #000; font-size: 1.3rem; font-weight: 900; line-height: 1; touch-action: manipulation; user-select: none; }
         .filter-scroll-arrow:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 #000; }
+        .news-date { display: inline-flex; align-items: center; gap: .3rem; padding: .28rem .5rem; color: #111827; background: #fef08a; border: 2px solid #000; border-radius: .55rem; font-size: .68rem; font-weight: 900; white-space: nowrap; transition: transform .2s ease, background-color .2s ease; }
+        .news-date::before { content: '📅'; }
+        .card-neo:hover .news-date, .card-neo:focus-within .news-date { background: #7dd3fc; transform: rotate(-2deg) translateY(-2px); }
         @media (max-width: 640px) {
             .btn-neo, .filter-chip { min-height: 44px; }
             main { padding-top: 1.25rem; }
@@ -271,20 +274,20 @@
                         <span class="bg-blue-600 text-white font-black text-[11px] px-2.5 py-0.5 rounded border border-black uppercase">
                             GOB • Nacional
                         </span>
-                        <span class="text-[11px] font-bold text-gray-500">28 Set 2026</span>
+                        <time class="news-date" datetime="2026-09-27">27 Set 2026</time>
                     </div>
                     <h3 class="font-comic text-xl text-gray-900 uppercase mb-2 leading-snug">
-                        Grande Oriente do Brasil Celebra Assembleia de Integração Cívica
+                        ARLS de Estudos e Pesquisas Cavaleiros de São João Recebe Grão-Mestre da Grande Loja da Argentina
                     </h3>
                     <p class="text-xs text-gray-700 font-semibold leading-relaxed mb-4">
-                        O Grão-Mestrado Geral reuniu delegações de todos os estados no Palácio Jair Assis Ribeiro em Brasília para apresentar novas diretrizes filantrópicas para 2027.
+                        A loja de estudos e pesquisas da jurisdição do GOB-RJ recebeu o Grão-Mestre da Grande Loja da Argentina em uma agenda institucional.
                     </p>
                 </div>
                 <div class="pt-4 border-t-2 border-black/10 flex items-center justify-between">
                     <a href="artigo.html?id=brasil-gob" class="btn-neo bg-black text-white text-xs font-black px-4 py-2 rounded-xl uppercase hover:bg-[#ff1744]">
                         Ler Matéria ➔
                     </a>
-                    <a href="https://gob.org.br" target="_blank" rel="noopener" class="text-xs font-extrabold text-blue-700 hover:underline">
+                    <a href="https://www.gob.org.br/a-arls-de-estudos-e-pesquisas-cavaleiros-de-sao-joao-da-jurisdicao-do-gob-rj-recebe-o-grao-mestre-da-grande-loja-da-argentina/" target="_blank" rel="noopener" class="text-xs font-extrabold text-blue-700 hover:underline">
                         gob.org.br ↗
                     </a>
                 </div>
@@ -297,21 +300,21 @@
                         <span class="bg-purple-700 text-white font-black text-[11px] px-2.5 py-0.5 rounded border border-black uppercase">
                             CMSB • Confederação
                         </span>
-                        <span class="text-[11px] font-bold text-gray-500">25 Set 2026</span>
+                        <time class="news-date" datetime="2026-09-26">26 Set 2026</time>
                     </div>
                     <h3 class="font-comic text-xl text-gray-900 uppercase mb-2 leading-snug">
-                        Grandes Lojas Definem Calendário da Conferência Nacional de Mestres
+                        GOB Participa do 1º Encontro da CMI do Sagrado Arco Real de Jerusalém
                     </h3>
                     <p class="text-xs text-gray-700 font-semibold leading-relaxed mb-4">
-                        A Confederação da Maçonaria Simbólica do Brasil oficializou os tópicos de ética pública e responsabilidade social que pautarão o encontro anual.
+                        Representantes do Grande Oriente do Brasil participaram do encontro da CMI realizado em Buenos Aires.
                     </p>
                 </div>
                 <div class="pt-4 border-t-2 border-black/10 flex items-center justify-between">
                     <a href="artigo.html?id=brasil-cmsb" class="btn-neo bg-black text-white text-xs font-black px-4 py-2 rounded-xl uppercase hover:bg-purple-700">
                         Ler Matéria ➔
                     </a>
-                    <a href="https://cmsb.org.br" target="_blank" rel="noopener" class="text-xs font-extrabold text-purple-700 hover:underline">
-                        cmsb.org.br ↗
+                    <a href="https://www.gob.org.br/gob-participa-do-1o-encontro-da-cmi-do-sagrado-arco-real-de-jerusalem-em-buenos-aires/" target="_blank" rel="noopener" class="text-xs font-extrabold text-purple-700 hover:underline">
+                        gob.org.br ↗
                     </a>
                 </div>
             </article>
@@ -323,21 +326,21 @@
                         <span class="bg-yellow-400 text-black font-black text-[11px] px-2.5 py-0.5 rounded border border-black uppercase">
                             COMAB • Autônomos
                         </span>
-                        <span class="text-[11px] font-bold text-gray-500">22 Set 2026</span>
+                        <time class="news-date" datetime="2026-09-25">25 Set 2026</time>
                     </div>
                     <h3 class="font-comic text-xl text-gray-900 uppercase mb-2 leading-snug">
-                        Grandes Orientes Autônomos Concluem Encontro da Região Centro-Sul
+                        Loja Campos Lobo Realiza Sessão Especial de Entrega de Comendas
                     </h3>
                     <p class="text-xs text-gray-700 font-semibold leading-relaxed mb-4">
-                        Resoluções com foco no amparo à juventude e intercâmbio de arquivos históricos foram ratificadas pelas potências confederadas.
+                        A publicação do GOB registra a sessão especial realizada pela Loja Campos Lobo e a entrega de comendas.
                     </p>
                 </div>
                 <div class="pt-4 border-t-2 border-black/10 flex items-center justify-between">
                     <a href="artigo.html?id=brasil-comab" class="btn-neo bg-black text-white text-xs font-black px-4 py-2 rounded-xl uppercase hover:bg-yellow-400 hover:text-black">
                         Ler Matéria ➔
                     </a>
-                    <a href="https://comab.org.br" target="_blank" rel="noopener" class="text-xs font-extrabold text-black hover:underline">
-                        comab.org.br ↗
+                    <a href="https://www.gob.org.br/loja-campos-lobo-realiza-sessao-especial-de-entrega-de-comendas/" target="_blank" rel="noopener" class="text-xs font-extrabold text-black hover:underline">
+                        gob.org.br ↗
                     </a>
                 </div>
             </article>
@@ -349,7 +352,7 @@
                         <span class="bg-blue-600 text-white font-black text-[11px] px-2.5 py-0.5 rounded border border-black uppercase">
                             SP • GOB-SP / GLESP
                         </span>
-                        <span class="text-[11px] font-bold text-gray-500">20 Set 2026</span>
+                        <time class="news-date" datetime="2026-09-20">20 Set 2026</time>
                     </div>
                     <h3 class="font-comic text-xl text-gray-900 uppercase mb-2 leading-snug">
                         Palácio Maçónico de São Paulo Inaugura Acervo Cultural Digital
@@ -376,7 +379,7 @@
                         <span class="bg-red-600 text-white font-black text-[11px] px-2.5 py-0.5 rounded border border-black uppercase">
                             RJ • GOB-RJ / GLMERJ
                         </span>
-                        <span class="text-[11px] font-bold text-gray-500">18 Set 2026</span>
+                        <time class="news-date" datetime="2026-09-18">18 Set 2026</time>
                     </div>
                     <h3 class="font-comic text-xl text-gray-900 uppercase mb-2 leading-snug">
                         Templo Histórico do Lavradio Promove Circuito de Visitas Monitoradas
@@ -397,19 +400,19 @@
             </article>
 
             <!-- Notícia 6: Minas Gerais (GOB-MG / GLMMG / GOMG) -->
-            <article data-categoria="mg" data-artigo="artigo.html?id=brasil-mg" class="card-neo bg-white rounded-3xl p-5 flex flex-col justify-between border-t-8 border-t-purple-600 cursor-pointer" role="link" tabindex="0" aria-label="Abrir matéria completa de Minas Gerais">
+            <article data-categoria="nacional" data-artigo="artigo.html?id=brasil-mg" class="card-neo bg-white rounded-3xl p-5 flex flex-col justify-between border-t-8 border-t-purple-600 cursor-pointer" role="link" tabindex="0" aria-label="Abrir matéria completa da COMAB">
                 <div>
                     <div class="flex items-center justify-between mb-3">
                         <span class="bg-purple-600 text-white font-black text-[11px] px-2.5 py-0.5 rounded border border-black uppercase">
-                            MG • GOB-MG / GLMMG / GOMG
+                            COMAB • Confederação
                         </span>
-                        <span class="text-[11px] font-bold text-gray-500">15 Set 2026</span>
+                        <time class="news-date" datetime="2026-09-16">16 Set 2026</time>
                     </div>
                     <h3 class="font-comic text-xl text-gray-900 uppercase mb-2 leading-snug">
-                        Potências Mineiras Unificam Campanha Estadual de Filantropia
+                        GOMG Celebra 82 Anos de História com Sessão Especial e Homenagens
                     </h3>
                     <p class="text-xs text-gray-700 font-semibold leading-relaxed mb-4">
-                        As três obediências de Minas Gerais lançaram ação integrada de entrega de materiais escolares e reformas em abrigos de Belo Horizonte e Triângulo Mineiro.
+                        A COMAB registrou a sessão especial, a palestra e as homenagens realizadas pelo Grande Oriente de Minas Gerais.
                     </p>
                 </div>
                 <div class="pt-4 border-t-2 border-black/10 flex items-center justify-between">
@@ -417,27 +420,25 @@
                         Ler Matéria ➔
                     </a>
                     <div class="flex gap-2 text-xs font-extrabold text-purple-700">
-                        <a href="https://gobminas.org.br" target="_blank" class="hover:underline">GOB-MG</a> •
-                        <a href="https://glmmg.org.br" target="_blank" class="hover:underline">GLMMG</a> •
-                        <a href="https://gomg.org.br" target="_blank" class="hover:underline">GOMG</a>
+                        <a href="https://comab.org.br/gomg-celebra-82-anos-de-historia-com-sessao-especial-palestra-e-homenagens-no-oriente-de-belo-horizonte/" target="_blank" rel="noopener" class="hover:underline">comab.org.br ↗</a>
                     </div>
                 </div>
             </article>
 
             <!-- Notícia 7: Rio Grande do Sul (GOB-RS / GORGS) -->
-            <article data-categoria="rs" data-artigo="artigo.html?id=brasil-rs" class="card-neo bg-white rounded-3xl p-5 flex flex-col justify-between border-t-8 border-t-yellow-400 cursor-pointer" role="link" tabindex="0" aria-label="Abrir matéria completa do Rio Grande do Sul">
+            <article data-categoria="nacional" data-artigo="artigo.html?id=brasil-rs" class="card-neo bg-white rounded-3xl p-5 flex flex-col justify-between border-t-8 border-t-yellow-400 cursor-pointer" role="link" tabindex="0" aria-label="Abrir matéria completa da CMSB">
                 <div>
                     <div class="flex items-center justify-between mb-3">
                         <span class="bg-yellow-400 text-black font-black text-[11px] px-2.5 py-0.5 rounded border border-black uppercase">
-                            RS • GOB-RS / GORGS
+                            CMSB • Confederação
                         </span>
-                        <span class="text-[11px] font-bold text-gray-500">12 Set 2026</span>
+                        <time class="news-date" datetime="2026-07-14">14 Jul 2026</time>
                     </div>
                     <h3 class="font-comic text-xl text-gray-900 uppercase mb-2 leading-snug">
-                        Comitê de Solidariedade no RS Conclui Nova Fase de Apoio Comunitário
+                        CMSB 2026 – Brasília
                     </h3>
                     <p class="text-xs text-gray-700 font-semibold leading-relaxed mb-4">
-                        Lojas do Rio Grande do Sul coordenam entregas estruturais e apoiam famílias com suporte financeiro e reabilitação de comércios comunitários locais.
+                        A Confederação da Maçonaria Simbólica do Brasil publicou informações sobre a edição 2026 do encontro em Brasília.
                     </p>
                 </div>
                 <div class="pt-4 border-t-2 border-black/10 flex items-center justify-between">
@@ -445,8 +446,7 @@
                         Ler Matéria ➔
                     </a>
                     <div class="flex gap-2 text-xs font-extrabold text-yellow-800">
-                        <a href="https://gobrgs.org.br" target="_blank" class="hover:underline">GOB-RS</a> •
-                        <a href="https://gorgs.org.br" target="_blank" class="hover:underline">GORGS</a>
+                        <a href="https://cmsb.org.br/cmsb-2026-brasilia/" target="_blank" rel="noopener" class="hover:underline">cmsb.org.br ↗</a>
                     </div>
                 </div>
             </article>

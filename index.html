@@ -254,6 +254,10 @@
             transform: translateY(-2px);
         }
 
+        .news-date { display: inline-flex; align-items: center; gap: .3rem; padding: .28rem .5rem; color: #111827; background: #fef08a; border: 2px solid #000; border-radius: .55rem; font-size: .68rem; font-weight: 900; white-space: nowrap; transition: transform .2s ease, background-color .2s ease; }
+        .news-date::before { content: '📅'; }
+        .card-neo:hover .news-date, .card-neo:focus-within .news-date { background: #7dd3fc; transform: rotate(-2deg) translateY(-2px); }
+
         @media (max-width: 640px) {
             .partner-options { grid-template-columns: 1fr; gap: 1rem; }
             .partner-option { padding: 1rem; }
@@ -374,10 +378,10 @@
                             
                             <div class="md:col-span-2">
                                 <h2 class="font-comic text-2xl md:text-3xl lg:text-4xl text-white text-headline-3d uppercase leading-tight mb-3">
-                                    Potências Regulares Firmam Acordo Cívico Para Ações Comunitárias
+                                    GOB Participa do 1º Encontro da CMI do Sagrado Arco Real de Jerusalém
                                 </h2>
                                 <p class="text-xs md:text-sm font-bold text-gray-900 leading-relaxed bg-white/60 p-3 rounded-xl border-l-4 border-red-600">
-                                    Iniciativa reforça o papel da Maçonaria na sociedade brasileira e amplia o alcance de projetos sociais e de reforço escolar.
+                                    Representantes do Grande Oriente do Brasil participaram do encontro da CMI realizado em Buenos Aires.
                                 </p>
                             </div>
 
@@ -397,7 +401,7 @@
 
                     <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t-2 border-black/20 text-xs font-black text-black">
                         <div class="flex items-center gap-4">
-                            <span>📅 24 de agosto de 2025</span>
+                            <time class="news-date" datetime="2026-09-26">26 de setembro de 2026</time>
                         </div>
                         <a href="artigo.html?id=destaque" class="btn-neo bg-black text-white px-4 py-2 rounded-xl text-xs uppercase hover:bg-[#ff1744]">
                             Ler Matéria Completa →
@@ -433,7 +437,7 @@
                     <a href="artigo.html?id=mundo-ugle" class="btn-neo bg-yellow-400 text-black font-black text-xs px-3 py-2 rounded-xl uppercase mb-3">Ler matéria completa →</a>
 
                     <div class="flex items-center justify-between text-[11px] font-bold text-blue-200 border-t border-blue-400/30 pt-3">
-                        <span>📅 23 de agosto de 2025</span>
+                        <time class="news-date" datetime="2025-08-23">23 de agosto de 2025</time>
                     </div>
                 </div>
 
@@ -456,7 +460,7 @@
                     <a href="artigo.html?id=mundo-legado" class="btn-neo bg-yellow-400 text-black font-black text-xs px-3 py-2 rounded-xl uppercase mb-3">Ler matéria completa →</a>
 
                     <div class="flex items-center justify-between text-[11px] font-bold text-purple-200 border-t border-purple-400/30 pt-3">
-                        <span>📅 20 de agosto de 2025</span>
+                        <time class="news-date" datetime="2025-08-20">20 de agosto de 2025</time>
                     </div>
                 </div>
 
