@@ -218,6 +218,57 @@
             line-height: 1.3;
         }
 
+        .partner-book {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 12rem;
+            margin: .75rem 0 1rem;
+            padding: .7rem .7rem .7rem 1.2rem;
+            overflow: hidden;
+            background: #fff;
+            border: 3px solid #000;
+            border-radius: .85rem;
+            box-shadow: 4px 4px 0 #000;
+        }
+
+        .partner-book::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: .65rem;
+            width: .35rem;
+            background: #0038ff;
+            border-right: 2px solid #000;
+        }
+
+        .partner-book::after {
+            content: '';
+            position: absolute;
+            top: .55rem;
+            right: .55rem;
+            width: 1.1rem;
+            height: 1.1rem;
+            background: #ffea00;
+            border: 2px solid #000;
+            transform: rotate(45deg);
+        }
+
+        .partner-cover {
+            position: relative;
+            z-index: 1;
+            display: block;
+            width: min(72%, 10rem);
+            max-height: 10.5rem;
+            object-fit: contain;
+            object-position: center;
+            border: 2px solid #000;
+            border-radius: .35rem;
+            box-shadow: 4px 4px 0 rgba(0, 0, 0, .25);
+        }
+
         .partner-tag {
             display: block;
             margin-bottom: .55rem;
@@ -532,6 +583,9 @@
                     <h3 class="font-comic text-2xl uppercase text-black leading-tight mt-3 mb-2">
                         Coletânea Jovem Aprendiz (Portuguese Edition)
                     </h3>
+                    <div class="partner-book">
+                        <img src="imagemlivro.jpg" alt="Capa do livro Coletânea Jovem Aprendiz" class="partner-cover">
+                    </div>
                     <p class="text-[11px] font-bold text-gray-800 bg-white/70 p-2.5 rounded-xl border border-black/20 mb-4">
                         Conheça a obra e escolha a versão ideal para você.
                     </p>
